@@ -48,7 +48,7 @@ class CalculatorWithProps extends Component {
     })
 
     return (
-      <div className="container">
+      <div>
         {this.state.number}
 
         <div>

@@ -78,7 +78,7 @@ class Product extends Component {
 
         return (
             <div>
-                Product
+                <p>Product</p>
                 <input
                     onChange={(event) => this.textInputHandler(event, 'name')}
                     value={this.state.name}

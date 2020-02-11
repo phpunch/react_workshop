@@ -4,7 +4,6 @@ import Navbar from './components/Navbar'
 import Calculator from './containers/Calculator'
 import CalculatorWithProps from './containers/CalculatorWithProps'
 import Product from './containers/Product'
-import ErrorBoundary from './containers/ErrorBoundary'
 import EditProduct from './containers/EditProduct'
 import {
   BrowserRouter as Router,

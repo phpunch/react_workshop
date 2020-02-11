@@ -2,7 +2,7 @@ import React from 'react'
 import {Link} from 'react-router-dom'
 const Card = (props) => {
     return (
-        <div className="card" onClick={props.delete}>
+        <div className="card">
             <div className="card-header">
                 id: {props.id}
             </div>
@@ -11,7 +11,8 @@ const Card = (props) => {
                 <p className="card-text">price: {props.price}</p>
                 <p className="card-text">{props.updated_at}</p>
                 <p className="card-text">{props.created_at}</p>
-                <Link to={`/product/edit/${props.id}`}>Edit</Link>
+                <p><Link to={`/product/edit/${props.id}`}>Edit</Link></p>
+                <button type="button" className="btn btn-danger" onClick={props.delete}>Delete</button>
             </div>
         </div>
     )

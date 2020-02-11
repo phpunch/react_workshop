@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import Box from '../components/Box/Box'
 
-class Calculator extends Component {
-  state = { // 
+class CalculatorWithProps extends Component {
+  state = {
     number: 0,
     count: 0,
     saved_numbers: []
@@ -38,11 +39,11 @@ class Calculator extends Component {
   render() {
     const numbers = this.state.saved_numbers.map((element, index) => {
       return (
-        <li key={index}
+        <Box key={index}
           class="list-group-item"
-          onClick={() => this.deleteNumber(element)}>
+          delete={() => this.deleteNumber(element)}>
             id: {element.id}, number: {element.number}
-        </li>
+        </Box>
       )
     })
 
@@ -64,4 +65,4 @@ class Calculator extends Component {
   }
 }
 
-export default Calculator;
+export default CalculatorWithProps;
